@@ -1,5 +1,5 @@
 {
-    "name": "kevin830222/slim3-skeleton",
+    "name": "kevin830222/slim3-sbadmin-skeleton",
     "description": "Slim Framework 3 skeleton with Twig & Monolog and SB Admin 2",
     "license": "BSD-3-Clause",
     "type": "project",
@@ -11,6 +11,7 @@
             "homepage": "http://www.kkshyu.info"
         }
     ],
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "App\\": "app/src"
