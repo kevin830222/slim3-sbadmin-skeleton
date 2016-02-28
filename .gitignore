@@ -1,3 +1,8 @@
 vendor/
 log/*
 cache/*
+node_modules
+public/lib
+.phpintel
+public/js
+public/css

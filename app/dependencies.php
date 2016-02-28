@@ -24,6 +24,19 @@ $container['flash'] = function ($c) {
     return new \Slim\Flash\Messages;
 };
 
+// Http cache
+$container['cache'] = function ($c) {
+    return new \Slim\HttpCache\CacheProvider();
+};
+
+// handler
+$container['errorHandler'] = function ($c) {
+    return new App\Handler\Error($c['logger']);
+};
+$container['notFoundHandler'] = function ($c) {
+    return new App\Handler\NotFound($c['logger']);
+};
+
 // -----------------------------------------------------------------------------
 // Service factories
 // -----------------------------------------------------------------------------
@@ -35,12 +48,4 @@ $container['logger'] = function ($c) {
     $logger->pushProcessor(new \Monolog\Processor\UidProcessor());
     $logger->pushHandler(new \Monolog\Handler\StreamHandler($settings['logger']['path'], \Monolog\Logger::DEBUG));
     return $logger;
-};
-
-// -----------------------------------------------------------------------------
-// Action factories
-// -----------------------------------------------------------------------------
-
-$container['App\Action\HomeAction'] = function ($c) {
-    return new App\Action\HomeAction($c->get('view'), $c->get('logger'));
 };

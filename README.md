@@ -1,16 +1,19 @@
-# Slim 3 Skeleton
+# Slim 3 - SB Admin 2 Skeleton
 
-This is a simple skeleton project for Slim 3 that includes Twig, Flash messages and Monolog.
+This project integrate Slim 3 skeleton and SB Admin 2 template.
 
 ## Create your project:
 
-    $ composer create-project -n -s dev akrabat/slim3-skeleton my-app
+    $ composer create-project kevin830222/slim3-sbadmin-skeleton my-app
 
 ### Run it:
 
 1. `$ cd my-app`
-2. `$ php -S 0.0.0.0:8888 -t public public/index.php`
-3. Browse to http://localhost:8888
+2. `$ npm install`
+3. `$ gulp`
+4. `$ php -S 0.0.0.0:8888 -t public public/index.php`
+5. Browse to http://localhost:8888
+
 
 ## Key directories
 
@@ -31,3 +34,4 @@ This is a simple skeleton project for Slim 3 that includes Twig, Flash messages 
 * `app/routes.php`: All application routes are here
 * `app/src/Action/HomeAction.php`: Action class for the home page
 * `app/templates/home.twig`: Twig template file for the home page
+

@@ -1,14 +1,14 @@
 {
-    "name": "akrabat/slim3-skeleton",
-    "description": "Simple Slim Framework 3 skeleton with Twig & Monolog.",
+    "name": "kevin830222/slim3-skeleton",
+    "description": "Slim Framework 3 skeleton with Twig & Monolog and SB Admin 2",
     "license": "BSD-3-Clause",
     "type": "project",
-    "keywords": ["slim-framework", "skeleton"],
+    "keywords": ["slim-framework", "skeleton", "sb-admin-2"],
     "authors": [
         {
-            "name": "Rob Allen",
-            "email": "rob@akrabat.com",
-            "homepage": "http://akrabat.com"
+            "name": "Kevin Shyu",
+            "email": "kevin830222@gmail.com",
+            "homepage": "http://www.kkshyu.info"
         }
     ],
     "autoload": {
@@ -20,6 +20,10 @@
         "slim/slim": "^3.0",
         "slim/twig-view": "^2.0",
         "slim/flash": "^0.1.0",
-        "monolog/monolog": "^1.13"
+        "monolog/monolog": "^1.13",
+        "slim/http-cache": "^0.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0"
     }
 }

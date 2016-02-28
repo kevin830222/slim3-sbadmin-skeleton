@@ -1,0 +1,23 @@
+{
+  "name": "philips",
+  "version": "1.0.0",
+  "description": "[SB Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/) is an open source, admin dashboard template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bower": "^1.7.7",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-composer": "^0.4.0",
+    "gulp-less": "^3.0.5",
+    "gulp-minify": "0.0.5",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^2.2.0",
+    "less": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

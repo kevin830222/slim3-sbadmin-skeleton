@@ -1,10 +1,10 @@
 <?php
 
-// To help the built-in PHP dev server, check if the request was actually for
-// something which should probably be served as a static file
-if (PHP_SAPI === 'cli-server' && $_SERVER['SCRIPT_FILENAME'] !== __FILE__) {
-    return false;
-}
+// Ignore user aborts and allow the script to run forever
+ignore_user_abort(true);
+ 
+// disable php time limit
+set_time_limit(0);
 
 require __DIR__ . '/../vendor/autoload.php';
 
